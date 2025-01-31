@@ -1,0 +1,53 @@
+/* src/styles/App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
+/* Apply Lexend Giga font to only h1 */
+h1 {
+  font-family: "Lexend Giga", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 0 0 10px black, 0 0 20px black; /* Light shadow all around the text */
+}
+
+/* Other container styles */
+.app-container {
+  text-align: center; /* Center everything inside this container */
+  padding: 20px;
+
+  /* Set the background image */
+  background-image: url('https://motionbgs.com/media/2892/purple-sunset2.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Make the background image cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 100vh; /* Ensure the container covers the full viewport height */
+}
+
+/* Queue Size section */
+.queue-size {
+  font-family: "Lexend Giga", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 0 0 10px black, 0 0 20px black; /* Light shadow all around the text */
+}
+
+/* Button styles */
+button {
+  padding: 10px;
+  margin: 5px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Make sure buttons and inputs stay in a row and are centered */
+input, button {
+  display: inline-block;
+  vertical-align: middle;
+}

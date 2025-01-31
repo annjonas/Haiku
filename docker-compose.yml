@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile  # Reference the backend Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis  # Example environment variable (if needed)
+    restart: always
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile  # Reference the frontend Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: always
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    restart: always

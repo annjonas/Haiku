@@ -1,0 +1,15 @@
+/* src/styles/HaikuDisplay.css */
+.haiku-card {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px; /* Add border-radius for rounded buttons */
+  background: rgba(255, 255, 255, 0.6); /* Light pink with 70% opacity */
+}
+
+.haiku-card p {
+  margin: 0;
+}
