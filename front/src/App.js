@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { fetchHaikus, fetchQueueSize, clearQueue } from "./Api";
 import HaikuDisplay from "./components/HaikuDisplay";
 import QueueControls from "./components/QueueControls";
-import "./styles/App.css";
 import SakuraPetal from "./components/SakuraPetal";
+import AboutBox from "./components/AboutBox";
+import "./styles/App.css";
 
 function App() {
   const [haikus, setHaikus] = useState([]);
@@ -34,6 +35,7 @@ function App() {
 
       <QueueControls fetchHaikus={getHaikus} clearQueue={clearQueue} loading={loading} />
       <HaikuDisplay haikus={haikus} />
+      <AboutBox /> {/* Add About box here */}
     </div>
   );
 }
