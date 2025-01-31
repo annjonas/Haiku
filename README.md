@@ -4,17 +4,13 @@ Haiku to projekt który ma na celu zaprezentowanie wykorzystania Redisa jako buf
 
 ## Instalacja
 
-Jasiu nie zawiedź mnie i uzupełnij to
-
-```bash
-woof instalation much
-```
+docker-compose up --build
 
 ## Działanie
 
-```python
-woof usage much
-```
+Frontend(React) dzialajacy na porcie 3000
+Backend(Python) dzialajacy na porcie 5000
+Kolejka (Redis) dzialajaca na porcie 6379
 
 ## Autorzy
 
