@@ -1,0 +1,55 @@
+/* src/styles/AboutBox.css */
+.about-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.about-box {
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+  overflow: hidden; /* Hide content until hover */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  position: relative; /* Needed for absolute positioning of .about-text */
+}
+
+.about-box:hover {
+  width: 200px; /* Expand the width on hover */
+  height: 400px; /* Expand the height */
+}
+
+.about-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 1;
+  visibility: visible; /* Make sure it's visible initially */
+}
+
+.about-box:hover .about-text {
+  opacity: 0; /* Fade out on hover */
+  visibility: hidden; /* Hide the text after fading out */
+}
+
+.about-content {
+  display: none;
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity; /* Smooth fade-in for content */
+}
+
+.about-box:hover .about-content {
+  display: block;
+  opacity: 1; /* Fade in content when box is hovered */
+}

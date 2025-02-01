@@ -1,0 +1,30 @@
+/* src/styles/QueueControls.css */
+.queue-controls {
+  margin-bottom: 20px;
+  text-align: center; /* Center the controls */
+}
+
+.queue-controls input {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px; /* Add border-radius for rounded buttons */
+}
+
+.queue-controls button {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px; /* Add border-radius for rounded buttons */
+  background: lightpink;
+  border: none; /* Remove any default border */
+  cursor: pointer;
+}
+
+.queue-controls button.clear {
+  background-color: #eb4293;
+  color: white;
+}
+
+.queue-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
