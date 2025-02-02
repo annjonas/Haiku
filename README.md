@@ -14,7 +14,10 @@ docker-compose up --build
 * Backend (Python) dzialajacy na porcie 5000
 * Kolejka (Redis) dzialajaca na porcie 6379
 
-Backend asynchronicznie generuje Haiku, przechowuje je w buforze w Redis i obsługuje żądania Api.
+Backend asynchronicznie generuje haiku, przechowuje je w buforze w Redis i obsługuje żądania Api.
+Czas oczekiwania na odpowiedź zależy od ilości haiku w buforze.
+Jeśli w buforze będzie więcej haiku niż żądano, zostaną one zwrócone natychmiast
+Jeśli w buforze będzie mniej haiku niż żądano, zostaną one zwrócone, gdy wszystkie zostaną wygenerowane.
 
 ## Autorzy
 
